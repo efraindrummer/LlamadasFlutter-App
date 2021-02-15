@@ -1,4 +1,5 @@
 import 'package:calling/screens/dialScreen/dial_screen.dart';
+import 'package:calling/screens/groupCall/group_call_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: DialScreen(),
+      home: GroupCallScreen(),
     );
   }
 }
