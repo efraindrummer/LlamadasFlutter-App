@@ -1,4 +1,4 @@
-import 'package:calling/screens/audioCallWithImage/audio_call_with_image_screen.dart';
+import 'package:calling/screens/dialScreen/dial_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: AudioCallWithImage(),
+      home: DialScreen(),
     );
   }
 }
