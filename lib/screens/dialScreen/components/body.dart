@@ -80,7 +80,9 @@ class Body extends StatelessWidget {
               iconSrc: "assets/icons/call_end.svg",
               color: kRedColor,
               iconColor: Colors.white,
-              press: (){},
+              press: (){
+                Navigator.popAndPushNamed(context, 'group_call');
+              },
             )
           ],
         ),

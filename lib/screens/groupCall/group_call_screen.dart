@@ -13,20 +13,22 @@ class GroupCallScreen extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: buildAppBar(),
+      appBar: buildAppBar(context),
       body: Body(),
       bottomNavigationBar: buildButtonNavBar()
     );
   }
 }
 
-AppBar buildAppBar() {
+AppBar buildAppBar(BuildContext context) {
   return AppBar(
     backgroundColor: Colors.transparent,
     elevation: 0,
     leading: IconButton(
       icon: SvgPicture.asset("assets/icons/Icon Back.svg"), 
-      onPressed: (){},
+      onPressed: (){
+        Navigator.pushReplacementNamed(context, 'audio_call_image');
+      },
     ),
     actions: [
       IconButton(

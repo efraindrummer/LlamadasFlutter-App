@@ -9,6 +9,17 @@ class AudioCallWithImage extends StatelessWidget {
     //nos ayuda a hacer que nuestra interfaz de usuario responsiva
     SizeConfig().init(context);
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_right, color: Colors.black), 
+          onPressed: (){
+            Navigator.popAndPushNamed(context, 'dial_screen');
+          }
+        ),
+      ),
       body: Body(),
     );
   }
